@@ -1,0 +1,16 @@
+<div class="container info">
+    
+    <form method="post">
+        <div class="row">
+    
+            {% csrf_token %}
+            {{ form.as_table }}
+            <div class="Form-controls"><br>
+                <button type="submit" class="btn btn-success">Send Message</button>
+            </div>
+    
+        </div>
+        </div>
+    </form>
+</div>
+

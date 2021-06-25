@@ -1,0 +1,18 @@
+{% extends "portfolio/base.html" %} {% load static %} {% block content %}
+<div class="container mt-5">
+    <div class="row"> <div class="col-lg-6">
+        <img src="{{ projects.image.url }}" class="img-fluid mb-2" style="height: 480px;width: auto;align-items: center;" />
+    </div>
+
+  <div class="col-lg-6" style="border-left:1px solid #000;height:500px">
+  <h1 class="text-center mt-5">{{ projects.title }}</h1>
+  <h5 class="text-center text-muted mb-5">{{ project.description}}</h5>
+  <p>{{ projects.description}}</p>
+
+  <button type="button" class="btn btn-primary"><a href="{{projects.url}}" class="text-white">Wants to Watch</a></button>
+   
+    </div></div>
+   
+</div>
+
+{% endblock %}
